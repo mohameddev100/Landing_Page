@@ -1,0 +1,167 @@
+:root {
+
+}
+
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* General */
+
+/* Header  */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    box-shadow: 1px -2px 20px 0px black;
+    background-color: rgb(0, 129, 161);
+}
+.header .logo{
+    font-size: 30px;
+    color: red;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+.header .logo span{
+    color: rgb(255, 146, 69);
+    font-weight: bold;
+}
+.header .logo{
+    color: white;
+}
+.header .nav {
+    display: flex;
+}
+.header .nav li a {
+    margin-left: 30px;
+    background-color: rgb(59, 219, 185);
+    padding: 15px 25px;
+    border-radius: 6px;
+    color: black;
+    transition: 0.3s ease;
+}
+.header .nav li a:hover {
+    background-color: rgb(23, 192, 155);
+}
+/* Header  */
+
+/* About  */
+.about {
+    padding: 100px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #124d4d;
+}
+.about .info h2{
+    font-size: 30px;
+    color: white;
+    animation: moving 1s  alternate-reverse infinite;
+}
+.about .info h2 span {
+    color: #0070c9;
+    font-size: 40px;
+}
+@keyframes moving {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+.about .info p{
+    width: 500px;
+    line-height: 1.5;
+    color: #eee;
+    margin: 30px 0;
+    font-size: 15px;
+}
+.about .info .btn{
+    background-color: #0070c9;
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.4s 
+ease;
+}
+.about .info .btn:hover {
+    background-color: #006fc9b9;
+}
+.about img{
+    width: 350px;
+    height: 350px;
+}
+/* About  */
+
+/* Info  */
+.Secinfo {
+    padding: 100px 50px;
+}
+.Secinfo .title {
+    font-size: 40px;
+    text-align: center;
+}
+.Secinfo > p {
+    text-align: center;
+    margin-top: 10px;
+    color: #aaa;
+}
+.boxes {
+    margin-top: 50px;
+    display: flex;
+    gap: 15px;
+}
+.boxes .box {
+    background-color: #e7e5e5;
+    padding: 30px 20px;
+    border-radius: 6px;
+}
+.boxes .box i {
+    font-size: 50px;
+    margin-bottom: 25px;
+    color: #0070c9;
+}
+.boxes .box h3 {
+    font-size: 25px ;
+}
+.boxes .box p {
+    padding: 20px 0 35px 0;
+    font-weight: normal;
+    color: #6e6e6e;
+}
+.boxes .box .more {
+    color: #0070c9;
+    position: relative;
+}
+.boxes .box .more::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background-color: #124d4d;
+    transition: 0.5s;
+
+}
+.boxes .box .more:hover::before {
+    width: 100%;
+}
+/* Info  */
